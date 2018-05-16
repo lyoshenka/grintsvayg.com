@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Grintsvayg Family</title>
+
+  <!-- for Google -->
+  <meta name="description" content="The Grintsvayg Family Website" />
+  <meta name="keywords" content="grintsvayg,family" />
+  <meta name="author" content="Alex Grintsvayg" />
+
+  <!-- for Facebook -->          
+  <meta property="og:title" content="Grintsvayg Family" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="/kili-summit.jpg" />
+  <meta property="og:url" content="http://www.grintsvayg.com" />
+  <meta property="og:description" content="The Grintsvayg family website" />
+
+  <!-- for Twitter -->          
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Grintsvayg Family" />
+  <meta name="twitter:description" content="The Grintsvayg family website" />
+  <meta name="twitter:image" content="/kili-summit.jpg" />
+
+  <style>
+/*
+    body { 
+      background: url(/kili-summit.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+*/
+    body {
+      background-color: #b5dbf6;
+    }
+    #us { /* fallback for ie 6,7,8 */
+	    position: absolute;
+	    top: 10%;
+	    left: 10%;
+	    border-radius: 3px;
+	    box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+    }
+    #us:empty { /* non-ie, ie9+ */
+	    top: 50%;
+	    left: 50%;
+	    -webkit-transform: translate(-50%, -50%);
+	    -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	    -o-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+    }
+    @media screen and (orientation: portrait) {
+      #us { max-width: 95%; }
+    }
+    @media screen and (orientation: landscape) {
+      #us { max-height: 95%; }
+    }
+  </style>
+</head>
+<body>
+  <img id="us" src="/kili-summit.jpg"/ usemap="#people">
+  <map id="map" name="people">
+    <area data-key="alex" alt="Alex" title="Alex" href="http://grin.io" shape="poly" coords="522,315,506,318,498,332,492,345,490,359,489,372,487,380,479,382,476,392,473,399,468,402,460,402,445,397,432,392,409,387,394,378,375,372,358,361,339,349,328,336,315,319,302,304,295,292,285,279,279,267,285,252,266,232,235,247,241,270,249,285,256,319,274,344,296,378,316,404,348,427,378,451,402,474,406,490,406,506,408,538,401,564,396,596,389,633,387,670,381,721,382,767,378,816,379,848,377,899,437,899,460,829,473,728,477,805,485,864,482,899,538,899,543,844,553,763,554,705,554,666,549,607,556,563,552,545,558,495,564,476,565,453,580,441,564,429,549,405,539,399,545,385,559,372,559,365,554,363,557,339,552,324,535,315">
+
+    <area data-key="marina" alt="Marina" title="Marina" href="https://www.linkedin.com/in/marinagrins" shape="poly" coords="630,441,618,454,596,456,564,484,550,545,556,574,548,611,545,653,564,682,554,710,558,738,563,765,567,787,565,813,564,841,566,858,563,899,621,899,621,861,627,839,630,745,644,797,639,898,698,898,694,846,701,765,708,699,707,656,696,630,705,603,701,581,708,550,714,497,698,459,699,427,700,403,696,387,685,375,676,366,651,358,656,371,645,383,633,404,629,425">
+
+    <area data-key="lana" alt="Lana" title="Lana" href="http://lanagrin.com" shape="poly" coords="812,343,800,358,791,377,789,396,791,406,770,409,757,425,737,421,719,423,697,420,697,452,709,481,719,499,729,500,729,517,716,517,712,535,714,580,719,615,720,645,723,679,728,701,739,713,742,739,753,757,757,786,762,799,760,821,770,876,780,899,821,899,823,884,833,896,871,900,869,864,865,810,866,772,866,705,863,632,850,596,856,549,862,479,857,449,866,426,844,427,853,405,862,381,861,359,847,342,824,341">
+
+    <area data-key="greg" alt="Greg" title="Greg" href="https://www.linkedin.com/pub/greg-grintsvayg-pmp/2/160/a02" shape="poly" coords="871,610,871,696,876,754,864,795,868,848,874,898,932,899,927,872,947,825,948,726,954,682,968,718,979,742,971,777,979,816,987,854,987,894,1037,900,1045,857,1059,854,1061,839,1044,808,1045,782,1038,739,1037,719,1033,707,1026,612,1054,596,1020,541,1013,479,1028,465,1047,449,1079,443,1101,436,1122,418,1138,401,1139,370,1134,333,1128,315,1116,294,1115,262,1099,253,1078,256,1068,264,1075,281,1078,295,1084,305,1083,337,1083,365,1068,366,1054,373,1037,373,1034,366,995,363,995,348,971,338,978,291,971,281,955,274,936,270,921,275,905,296,903,320,904,333,886,342,866,371,864,406,881,421,875,465,874,535">
+  </map>
+
+  <script src="/imageMapResizer.min.js"></script>
+  <script>
+    imageMapResize('#map');
+  </script>
+</body>
+</html>
